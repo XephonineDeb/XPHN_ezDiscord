@@ -1,29 +1,26 @@
 import setuptools
 
-
-with open('README.md') as f:
-    README = f.read()
+with open("README.md", "r") as fh:
+    long_description = fh.read()
 
 setuptools.setup(
-    author="Xephonine // Hylaxe",
-    author_email="priyanshudeb3@gmail.com",
-    name='XPHN_ezDiscord',
-    license="MIT",
-    description='Easily create and use Discord webhooks and bots with barely 2 lines of code!',
-    version='v0.0.1',
-    long_description=README,
-    url='https://github.com/XephonineDeb/XPHN_ezDiscord/',
-    packages=setuptools.find_packages(),
-    python_requires=">=3.1",
-    install_requires=['requests','discord'],
+    name="XPHN_ezDiscord",                     # This is the name of the package
+    version="0.0.1",                        # The initial release version
+    author="Xephonine // Hylaxe",                     # Full name of the author
+    description="Easily create and use Discord Webhooks and simple bots.",
+    long_description=long_description,      # Long description read from the the readme file
+    long_description_content_type="text/markdown",
+    packages=setuptools.find_packages(),    # List of all python modules to be installed
     classifiers=[
-        # Trove classifiers
-        # (https://pypi.python.org/pypi?%3Aaction=list_classifiers)
-        'Development Status :: 5 - Production/Stable',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python',
-        'Topic :: Software Development :: Libraries',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Intended Audience :: Developers',
-    ],
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: Android",
+        "Operating System :: Microsoft",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: OS Independent",
+    ],                                      # Information to filter the project on PyPi website
+    python_requires='>=3.2',                # Minimum version requirement of the package
+    py_modules=["ezDiscord"],             # Name of the python package
+    package_dir={'':'XPHN_ezDiscord/src'},     # Directory of the source code of the package
+    install_requires=['discord','requests','os']                     # Install other dependencies if any
 )
