@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="XPHN_ezDiscord",                     # This is the name of the package
-    version="2.0.0",                        # The initial release version
+    version="2.0.2",                        # The initial release version
     author="Xephonine // Hylaxe",                     # Full name of the author
     description="Easily create and use Discord Webhooks and simple bots.",
     long_description=long_description,      # Long description read from the the readme file
