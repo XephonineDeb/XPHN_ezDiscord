@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="XPHN_ezDiscord",                     # This is the name of the package
-    version="0.0.1",                        # The initial release version
+    version="2.0.0",                        # The initial release version
     author="Xephonine // Hylaxe",                     # Full name of the author
     description="Easily create and use Discord Webhooks and simple bots.",
     long_description=long_description,      # Long description read from the the readme file
@@ -22,5 +22,5 @@ setuptools.setup(
     python_requires='>=3.2',                # Minimum version requirement of the package
     py_modules=["ezDiscord"],             # Name of the python package
     package_dir={'':'XPHN_ezDiscord/src'},     # Directory of the source code of the package
-    install_requires=['discord','requests','os']                     # Install other dependencies if any
+    install_requires=['discord','requests']                     # Install other dependencies if any
 )
